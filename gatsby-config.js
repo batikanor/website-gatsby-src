@@ -4,7 +4,14 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-module.exports = {
-  /* Your site config here */
-  plugins: [],
+module.exports = { //< Because this is a node.js file
+  siteMetadata: {
+    title: 'Batikanor',
+    author: 'Batıkan Bora ORMANCI'
+  
+  },
+
+  plugins: [
+    "gatsby-plugin-sass"
+  ],
 }
