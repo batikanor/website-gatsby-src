@@ -1,6 +1,7 @@
 .blog-posts{
     list-style-type: none;
     margin: 0;
+    
 
 }
 .blog-post {
@@ -20,8 +21,32 @@
         margin-bottom: 0;
     }
     p {
-        color: #777777;
-        font-size: .8rem;
+        color: rgb(18, 107, 18);
+        font-size: .6rem;
         font-style: italic;
+    }
+    em {
+        font-size: .9rem;
+    }
+    &-tags {
+        align-items: left;
+        list-style-type: none;
+        display: flex; //< ltr
+        list-style-type: none;
+        margin: 0;
+        height: 0;
+    
+
+        
+        
+    }
+    &-tag {
+        color: rgb(18, 107, 18);
+        //float: left;
+        //line-height: 0;
+        //height:1rem;
+        margin-right: 1rem;
+        font-size: .6rem;
+
     }
 }

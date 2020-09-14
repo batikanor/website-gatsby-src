@@ -1,42 +1,72 @@
 import React from 'react'
-import Layout from '../components/layout'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+
+import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
+import Head from "../components/head"
 
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
     query {
-        allMarkdownRemark {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        date
-                    }
-                    fields {
-                        slug
-                    }
-                }
+        allContentfulBlogPost(
+          sort: { 
+            fields: createdAt,
+            order: DESC
+          }) {
+          edges {
+            node {
+                title
+                slug
+                description
+                createdAt(formatString: "D. MMMM, YYYY - HH:mm")
+                updatedAt(formatString: "D. MMMM, YYYY - HH:mm")
+                tags
             }
+          }
         }
-    }
+      }
+      
 `)
     return (
         <Layout>
-
+            <Head title="Blog"/>
             <h1>Blog</h1>
+
             <ol className={blogStyles.blogPosts}>
-                {data.allMarkdownRemark.edges.map((edge) => {
+                {data.allContentfulBlogPost.edges.map((edge) => {
+                   let color = 'red';
                     return (
-                        <li className={blogStyles.blogPost}>
-                            <Link to={`/blog/${edge.node.fields.slug}`}>
-                                <h2>{edge.node.frontmatter.title}</h2>
-                                <p>{edge.node.frontmatter.date}</p>
+                        <>
+                            <article>
+                                <hr/>
+                                <li className={blogStyles.blogPost}>
+                                    <Link to={`/blog/${edge.node.slug}`}>
+                                        <h2>{edge.node.title}</h2>
+                                        <ul className={blogStyles.blogPostTags}>
+                                                {edge.node.tags.map((tag) => {
+                                                
+                                                return ( <li className={blogStyles.blogPostTag}>{tag}</li> )
+                                                })}
+                                        </ul>
+                                        <br/>
+                                        <em>{edge.node.description}</em>
+                                        <p>
 
-                            </Link>
+                
+                                            
+                                            <em> Created: {edge.node.createdAt}</em>
+                                            <br/>
+                                            <em> Updated: {edge.node.updatedAt}</em>
+                                            
 
-                        </li>
+                                        
+                                        </p>
+                                    </Link>
+
+                                </li>
+                            </article>
+                        </> // why? https://stackoverflow.com/questions/54917974/why-i-cant-use-a-hr-tag-outside-another-tag-in-reactjs
                     )
                 })}
             </ol>

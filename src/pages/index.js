@@ -2,10 +2,12 @@ import React from "react" //< React is already installed as part of our gatsby p
 import { Link } from 'gatsby'
 
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Head title="Main Page"/>
       <h1>Hello,</h1>
       <h2>I'm Batikan</h2>
       <p>To learn more about me <Link to="/about">click here</Link></p>
