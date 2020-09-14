@@ -8,6 +8,7 @@ const Header = () => {
         site {
             siteMetadata {
                 title
+                author
             }
         }
     } 
@@ -19,7 +20,7 @@ const Header = () => {
             <h1>
             <Link className={headerStyles.title} to="/">
                 {data.site.siteMetadata.title} 
-                <p>(Batıkan Bora ORMANCI)</p>
+                <p className={headerStyles.subtitle}>{data.site.siteMetadata.author}</p>
             </Link>
                 
             </h1>
