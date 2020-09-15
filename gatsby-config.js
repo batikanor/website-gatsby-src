@@ -7,8 +7,8 @@
 module.exports = { //< Because this is a node.js file
   siteMetadata: {
     title: 'Batikanor',
-    author: 'Batıkan Bora ORMANCI'
-  
+    author: 'Batıkan Bora ORMANCI',
+    url: 'http://www.batikanor.com'
   },
 
   plugins: [
@@ -46,7 +46,13 @@ module.exports = { //< Because this is a node.js file
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'batikanor'
+      }
+    }
 
 
     

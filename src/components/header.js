@@ -24,7 +24,7 @@ const Header = () => {
             </Link>
                 
             </h1>
-            <nav>
+            <nav className={headerStyles.nav}>
                 <ul className={headerStyles.navList}>
                     <li>
                         <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/">Home</Link>

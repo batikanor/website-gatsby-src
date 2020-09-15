@@ -12,6 +12,7 @@ const ProjectsPage = () => {
             <p>
                 I will publish a blog post for every single project and link to them here.
             </p>
+            
         </Layout>
         )
 }

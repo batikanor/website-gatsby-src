@@ -15,6 +15,14 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
+   
+            site {
+                siteMetadata {
+                    url
+                }
+            }
+            
+               
         }
     
     `)
