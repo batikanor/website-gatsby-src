@@ -63,12 +63,13 @@ const BlogPost = (props, location) => {
 
             <article>
                 <h1>{props.data.contentfulBlogPost.title}</h1>
+                <CommentCount config={disqusConfig} placeholder={'...'} />
+                <hr/>
                 <em>{props.data.contentfulBlogPost.description}</em>
                 
                 <hr />
 
                 {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-                <CommentCount config={disqusConfig} placeholder={'...'} />
                 <Disqus config={disqusConfig}/>
             </article>
             

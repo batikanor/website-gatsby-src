@@ -1,8 +1,11 @@
+.background {
+    background-color: gray;
+}
 .container {
     margin: 0 auto;
-    max-width: 750px;
-    padding: 1rem;
-
+    max-width: 60rem;
+    padding: 2rem;
+    background-color: #feffef;
     display: flex;
     flex-direction: column; // Default value was rov
     min-height: 100vh; // viewport height

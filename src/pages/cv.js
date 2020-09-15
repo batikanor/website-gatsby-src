@@ -26,6 +26,9 @@ const CVPage = ( props ) => {
         
         <Layout>
             <Head title="CV"/>
+            <h1>CV</h1>
+            <CommentCount config={disqusConfig} placeholder={'...'} />
+            <hr/>
             <p>My Resume in English, German and Turkish are accesible below. If you want a more detailed one please <Link to="/contact">Contact me!</Link> </p>
             <h2 class={cvStyles.cvCaption}>English <a href="https://resume.creddle.io/resume/ijqcr0r5bf1" target="_blank"> (Click for fullscreen)</a></h2>
             <iframe clas={cvStyles.cv}  title="English CV" src="https://resume.creddle.io/embed/ijqcr0r5bf1" width="857" height="2255" seamless></iframe>
@@ -33,7 +36,6 @@ const CVPage = ( props ) => {
             <p>NOT UP TO DATE</p>
             <h2>Turkish</h2>
             <p>NOT UP TO DATE</p>
-            <CommentCount config={disqusConfig} placeholder={'...'} />
             <Disqus config={disqusConfig}/>
         </Layout>
         )

@@ -25,6 +25,8 @@ const ContactPage = ( props ) => {
         <Layout>
             <Head title="Contact"/>
             <h1>Contact me</h1>
+            <CommentCount config={disqusConfig} placeholder={'...'} />
+            <hr/>
             <ul>
                 <li>
                     Email: <a href="mailto: batikanor@gmail.com?subject=Batikanor Website Feedback&body=I've found this email adress from your homepage.">batikanor@gmail.com</a>
@@ -33,7 +35,6 @@ const ContactPage = ( props ) => {
                     Telegram: <Link to="http://t.me/batikanor">t.me/batikanor</Link>
                 </li>
             </ul>
-            <CommentCount config={disqusConfig} placeholder={'...'} />
             <Disqus config={disqusConfig}/>
 
         </Layout>
