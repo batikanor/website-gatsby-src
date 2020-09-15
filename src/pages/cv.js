@@ -31,7 +31,10 @@ const CVPage = ( props ) => {
             <hr/>
             <p>My Resume in English, German and Turkish are accesible below. If you want a more detailed one please <Link to="/contact">Contact me!</Link> </p>
             <h2 class={cvStyles.cvCaption}>English <a href="https://resume.creddle.io/resume/ijqcr0r5bf1" target="_blank"> (Click for fullscreen)</a></h2>
-            <iframe clas={cvStyles.cv}  title="English CV" src="https://resume.creddle.io/embed/ijqcr0r5bf1" width="857" height="2255" seamless></iframe>
+            <div className={cvStyles.cvDiv}>
+                <iframe className={cvStyles.cv}  title="English CV" src="https://resume.creddle.io/embed/ijqcr0r5bf1" width="100%" height="100%" seamless></iframe>
+
+            </div>
             <h2>German</h2>
             <p>NOT UP TO DATE</p>
             <h2>Turkish</h2>
