@@ -61,7 +61,7 @@ $breakpoint-smartphones-landscape: 768px;
 /* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
 @media only screen and (max-width : 640px) {
     .container {
-        max-width: 630px;
+        max-width: 560px;
         color: green;
 
     }
@@ -71,7 +71,7 @@ $breakpoint-smartphones-landscape: 768px;
 @media only screen and (max-width : 321px) {
     .container {
         max-width: 320px;
-        color: green;
+        color: red;
 
     }
 }
