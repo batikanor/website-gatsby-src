@@ -67,9 +67,11 @@ $breakpoint-smartphones-landscape: 768px;
     .nav-list {
         justify-content: space-between;
         margin: 0 0 0 0;
+        display: inline;
+
     }
     .nav-item {
- 
+        float: left;
         font-size: 0.9rem;
         text-decoration: none;
         text-align: center;

@@ -23,28 +23,31 @@ const Header = () => {
                 <p className={headerStyles.subtitle}>{data.site.siteMetadata.author}</p>
             </Link>
             </h1>
-            <nav className={headerStyles.nav}>
-                <ul className={headerStyles.navList}>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/">Home</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/blog">Blog</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/about">About</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/cv">CV</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/contact">Contact</Link>
-                    </li>                    
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/projects">Projects</Link>
-                    </li>                       
-                </ul>
-            </nav>
+            <div>
+                <nav className={headerStyles.nav}>
+                    <ul className={headerStyles.navList}>
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/">Home</Link>
+                        </li>
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/blog">Blog</Link>
+                        </li>
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/about">About</Link>
+                        </li>
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/cv">CV</Link>
+                        </li>
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/contact">Contact</Link>
+                        </li>                    
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/projects">Projects</Link>
+                        </li>                       
+                    </ul>
+                </nav>
+            </div>
+           
         </header>
     )
 }
