@@ -35,7 +35,7 @@ const BlogPage = () => {
 
             <ol className={blogStyles.blogPosts}>
                 {data.allContentfulBlogPost.edges.map((edge) => {
-                   let color = 'red';
+                   //let color = 'red';
                     return (
                         <>
                             <article>

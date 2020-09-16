@@ -35,8 +35,9 @@ const ContactPage = ( props ) => {
                     Telegram: <Link to="http://t.me/batikanor">t.me/batikanor</Link>
                 </li>
             </ul>
-            <Disqus config={disqusConfig}/>
 
+            
+            <Disqus config={disqusConfig}/>
         </Layout>
         )
 }

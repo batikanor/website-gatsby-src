@@ -51,7 +51,7 @@ const BlogPost = (props, location) => {
         identifier: `${props.data.contentfulBlogPost.slug}`,
         url: ` ${props.data.site.siteMetadata.url} + /blog/ + ${props.data.contentfulBlogPost.slug} `
     }
-    console.log(` ${location.href ? location.href : 'www.batikanor.com'}`)
+    //console.log(` ${location.href ? location.href : 'www.batikanor.com'}`)
 
     return (
 
