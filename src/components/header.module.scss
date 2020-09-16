@@ -56,19 +56,27 @@ $breakpoint-smartphones-landscape: 768px;
 
 /* iPads (portrait) and Below----------- */
 @media only screen and (max-width : 1024px) {
+    .title {
+        font-size: 3rem;
+    
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
     .nav-list {
         justify-content: space-between;
         margin: 0 0 0 0;
     }
     .nav-item {
  
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         text-decoration: none;
         text-align: center;
     }
     .nav-item:hover {
         color: #111111;
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 }
 
