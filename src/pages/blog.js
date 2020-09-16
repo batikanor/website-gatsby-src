@@ -56,7 +56,7 @@ const BlogPage = () => {
                                                 }
                                         </ul>
                                         </div>
-                                        <br/>
+                                        
                                         <em className={blogStyles.blogPostDescription}>{edge.node.description}</em>
                                         <p>
 
