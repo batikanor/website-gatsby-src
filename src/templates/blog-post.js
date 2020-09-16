@@ -27,14 +27,11 @@ query postQuery(
     }
 }
 
-
-  
   
 
 ` //< this will then be provided to us as a prop
 
 const BlogPost = (props, location) => {
-    
 
     
     const options = {

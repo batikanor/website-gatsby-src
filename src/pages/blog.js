@@ -43,14 +43,21 @@ const BlogPage = () => {
                                 <li className={blogStyles.blogPost}>
                                     <Link to={`/blog/${edge.node.slug}`}>
                                         <h2>{edge.node.title}</h2>
+                                        <div>
+
+                                        
                                         <ul className={blogStyles.blogPostTags}>
-                                                {edge.node.tags.map((tag) => {
-                                                
-                                                return ( <li className={blogStyles.blogPostTag}>{tag}</li> )
-                                                })}
+                                                {
+                                                   
+                                                    edge.node.tags.map((tag) => {
+                                                    
+                                                    return ( <li className={blogStyles.blogPostTag}>{tag}</li> )
+                                                    })
+                                                }
                                         </ul>
+                                        </div>
                                         <br/>
-                                        <em>{edge.node.description}</em>
+                                        <em className={blogStyles.blogPostDescription}>{edge.node.description}</em>
                                         <p>
 
                 
