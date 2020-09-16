@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 import Layout from '../components/layout'
