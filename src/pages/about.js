@@ -63,7 +63,14 @@ const AboutPage = () => {
                             <h4>Mapping</h4>
                             <p>You've probably seen a couple or so videos already, in which countries are drawn on maps and are made to
                                 fight one another to satisfy the fantasies of a youtube channel owner. I have such a hobby aswell, although I try to keep it as realistic as I can. I've partaken in online communities where people would draw maps or create mapping videos for all sorts of reasons. There were kids forming their own fantasy nations, adults trying to document history (some of them have made quite great videos actually) and some people who want to guess things about the future but make it reasonable. I don't really belong to any of these groups but I think after I get a stable occupation for myself I may return to this old hobby of mine and maybe choose a side.   </p>                            
-                        </li>  
+                        </li>
+                        <li>
+                            <h4>Solving puzzles</h4>
+                            <p>
+                                I enjoy solving puzzles and all other kinds of mysteries. I don't mean conventional puzzles in which one puts in physical parts together for them to form a meaningful image, but I mean more abstract variations of it.
+                                I take geniune satisfaction from researching a topic and putting info together to reach a meaningful conclusion. It is, in a way, an addiction aswell, whilst not being an inhumane thing. It may also be occasionally harming, but lets not get into details...
+                            </p>
+                        </li> 
                     </ul>
                     
 

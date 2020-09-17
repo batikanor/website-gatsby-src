@@ -9,7 +9,11 @@ const ProjectsPage = () => {
             <Head title="Projects"/>
             <h1>Projects</h1>
             <p>
-                I will publish a blog post for every single project and link to them here.
+                I will publish a blog post for every single project and link to them here. They won't be chronologically ordered
+                <ol>
+
+
+                </ol>
             </p>
             
         </Layout>
