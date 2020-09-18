@@ -39,7 +39,7 @@ const IndexPage = (props) => {
       </ul>
       <p>To learn more about me <Link to="/about">click here</Link></p>
         
-
+      <hr/>
       <Disqus config={disqusConfig}/>
     </Layout>
 

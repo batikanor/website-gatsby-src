@@ -67,6 +67,7 @@ const BlogPost = (props, location) => {
                 <hr />
 
                 {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+                <hr/>
                 <Disqus config={disqusConfig}/>
             </article>
             

@@ -39,6 +39,7 @@ const CVPage = ( props ) => {
             <p>NOT UP TO DATE</p>
             <h2>Turkish</h2>
             <p>NOT UP TO DATE</p>
+            <hr/>
             <Disqus config={disqusConfig}/>
         </Layout>
         )

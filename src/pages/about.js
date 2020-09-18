@@ -25,7 +25,7 @@ const AboutPage = () => {
                 <li>
                     <h3>Sports</h3>
                     <ul>
-                        <p>I'm not that competent in any of them, it just feels good to partake in such activities ocasionally.</p>
+                        <p>I'm not that competent in any of them, it just feels good to partake in such activities occasionally.</p>
                         <li>Basketball</li>
                         <li>Table Tennis</li>
                         <li>Jogging in the morning and/or along the coast</li>
@@ -33,11 +33,11 @@ const AboutPage = () => {
                 </li>
                 <li>
                     <h3>Programming</h3>
-                    <p>I don't always code for profit. I enjoy sharing knowledge with my friend and building some practically useless applications just to see if I can</p>
+                    <p>I don't always code for profit. I enjoy sharing knowledge with my friends and building some practically useless applications just to see if I can</p>
                 </li>
                 <li>
                     <h3>Computer Games</h3>
-                    <p>I like playing strategy based computer games, but lately I haven't been playing any games at all. Below is a list of the games I've played so far. The list is unsorted and to some extent, inaccurate. Because I've probably forgotten a bunch. </p>
+                    <p>I like playing strategy based computer games, but lately (for at least the last 4 years) I haven't been playing any games at all. Below is a list of the games I've played so far. The list is unsorted and to some extent, inaccurate. Because I've probably forgotten a bunch. I don't even know why I'm putting such a list down here.</p>
                     <ul>
                         <li>Europa Universalis IV</li>
                         <li>Civilization V, VI</li>
@@ -46,8 +46,17 @@ const AboutPage = () => {
                         <li>Skyrim</li>
                         <li>Minesweeper</li>
                         <li>Solitaire</li>
-
-                        <li></li>
+                        <li>Rocket League</li>
+                        <li>Roblox</li>
+                        <li>Minecraft</li>
+                        <li>World Of Warcraft</li>
+                        <li>Warcraft III, Frozen Throne</li>
+                        <li>Terraria</li>
+                        <li>You Have to Win the Game</li>
+                        <li>Moirai</li>
+                        <li>Online Soccer Manager</li>
+                        <li>Darkorbit</li>
+                        <li>Pro Evolution Soccer</li>
                     </ul>
                 </li>
                 <li>
