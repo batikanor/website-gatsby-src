@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql , Link } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
@@ -18,6 +18,10 @@ query postQuery(
         createdAt(formatString: "D. MMMM, YYYY - HH:mm")
         body {
             json
+        }
+        dependences {
+            title
+            slug
         }
     }
     site {
@@ -62,9 +66,27 @@ const BlogPost = (props, location) => {
                 <h1>{props.data.contentfulBlogPost.title}</h1>
                 <CommentCount config={disqusConfig} placeholder={'...'} />
                 <hr/>
-                <em>{props.data.contentfulBlogPost.description}</em>
+            
                 
+                <em>{props.data.contentfulBlogPost.description}</em>
                 <hr />
+                <ol>
+                    {props.data.contentfulBlogPost.dependences && props.data.contentfulBlogPost.dependences.map((dep) => {
+                        return (
+                            <>
+                                <h4>You may find portions of this post hard to understand if you haven't checked the following: </h4>
+                                <li>
+                                    <Link to={`/blog/${dep.slug}`}>{dep.title}</Link>
+
+                                </li>
+                                <br/>
+                            </> 
+                        )
+                    })}
+                </ol>
+                {props.data.contentfulBlogPost.dependences && <hr/>}
+                    
+
 
                 {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
                 <hr/>
