@@ -4,19 +4,21 @@ $breakpoint-smartphones-landscape: 768px;
   from {font-size: 4.4rem;}
   to {font-size: 4.45rem;}
 }
+
 @keyframes titleGrow2 {
     from {font-size: 2.9rem;}
     to {font-size: 3rem;}
-  }
+}
 
 @keyframes navItemSelect {
     from {font-size: 1.7rem;}
     to {font-size: 1.8rem;}
   }
-  @keyframes navItemSelect2 {
+
+@keyframes navItemSelect2 {
     from {font-size: 1rem;}
     to {font-size: 1.15rem;}
-  }
+}
 
 .header {
     padding: 1rem 0 3rem;

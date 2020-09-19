@@ -29,7 +29,7 @@ const ContactPage = ( props ) => {
             <hr/>
             <ul>
                 <li>
-                    Email: <a href="mailto: batikanor@gmail.com?subject=Batikanor Website Feedback&body=I've found this email adress from your homepage.">batikanor@gmail.com</a>
+                    Email: <a href="mailto: batikanor@gmail.com?subject=Batikanor Website Feedback&body=I've found this email address from your homepage.">batikanor@gmail.com</a>
                 </li>
                 <li>
                     Telegram: <Link to="http://t.me/batikanor">t.me/batikanor</Link>

@@ -37,7 +37,7 @@ const AboutPage = () => {
                 </li>
                 <li>
                     <h3>Computer Games</h3>
-                    <p>I like playing strategy based computer games, but lately (for at least the last 4 years) I haven't been playing any games at all. Below is a list of the games I've played so far. The list is unsorted and to some extent, inaccurate. Because I've probably forgotten a bunch. I don't even know why I'm putting such a list down here.</p>
+                    <p>I like playing strategy based computer games, but lately (for at least the last 4-5 years) I almost haven't been playing any games at all. Below is a list of most of the games I've played so far. The list is unsorted and to some extent, inaccurate. Because I've probably forgotten a bunch. I don't even know why I'm putting such a list down here.</p>
                     <ul>
                         <li>Europa Universalis IV</li>
                         <li>Civilization V, VI</li>
@@ -89,6 +89,7 @@ const AboutPage = () => {
 
             <h2>Travels</h2>
             <p>
+                I don't like travelling that much, but 
                 I was born in 1999 in Istanbul and have been in the following cities so far;
             </p>
             
