@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+
 import headerStyles from './header.module.scss'
+
 const Header = () => {
     const data = useStaticQuery(graphql`
     
@@ -43,7 +45,10 @@ const Header = () => {
                         </li>                    
                         <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/projects">Projects</Link>
-                        </li>                       
+                        </li>                    
+                        <li>
+                            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/demo">Demo</Link>
+                        </li>      
                     </ul>
                 </nav>
             </div>

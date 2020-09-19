@@ -52,9 +52,29 @@ module.exports = { //< Because this is a node.js file
       options: {
         shortname: 'batikanor'
       }
-    }
+    },
+  //   {
+  //     resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+  //     options: {
+  //       // Fields to index
+  //       fields: [
+  //         `title`,
+  //         `tags`
+  //       ],
+  //       // How to resolve each field`s value for a supported node type
+  //       resolvers: {
+  //         // For any node of type MarkdownRemark, list how to resolve the fields` values
+  //         ContentfulProduct: {
+  //           title: node => node.title,
+  //           tags: node => node.tags,
+  //           path: node => `/blog/${node.slug}`,
+  //         },
+  //       },
+  //       // Optional filter to limit indexed nodes
+  //       //filter: (node, getNode) => node.tags !== "exempt", 
+  //   }
 
-
-    
+  // }
+  
   ],
 }
