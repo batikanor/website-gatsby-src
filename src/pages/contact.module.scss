@@ -3,6 +3,11 @@
     padding: 0 0 0 0;
     font-size: larger;
     border: 3px double darkgray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    input, textarea {
+        width: 100%;
+    }
     &-bot-field {
         display: none;
 

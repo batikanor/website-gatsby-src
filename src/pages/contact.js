@@ -43,12 +43,13 @@ const ContactPage = ( props ) => {
                         <p>
                             <label>Content: <br/> <textarea name="content" cols="40" rows="5"></textarea> </label>
                         </p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
                         <p className={contactStyles.netlifyFormBotField}>
                             <label>This shouldn't be filled out: <input name="bot-field"></input></label>
                         </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+
                     </form> 
                 </li>
             </ul>
