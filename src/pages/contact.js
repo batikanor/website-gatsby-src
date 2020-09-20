@@ -35,7 +35,7 @@ const ContactPage = ( props ) => {
                     Telegram: <Link to="http://t.me/batikanor">t.me/batikanor</Link>
                 </li>
                 <li>
-                    Submit a form that will be emailed to me:
+                    Submit a form that will be emailed to me (There is a spam filter, your post may not reach me):
                     <form className={contactStyles.netlifyForm} name="submitContact" method="POST" netlify-honeypot="bot-field" action="/" data-netlify="true">
                         <input type="hidden" name="form-name" value="submitContact"/>
                         <p>

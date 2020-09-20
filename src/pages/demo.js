@@ -1,6 +1,6 @@
 import React from 'react'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
-
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from "../components/head"
