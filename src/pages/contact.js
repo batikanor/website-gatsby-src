@@ -36,7 +36,8 @@ const ContactPage = ( props ) => {
                 </li>
                 <li>
                     Submit a form that will be emailed to me:
-                    <form netlify className={contactStyles.netlifyForm} name="submitContact" method="POST" netlify-honeypot="bot-field">
+                    <form className={contactStyles.netlifyForm} name="submitContact" method="POST" netlify-honeypot="bot-field" action="/" data-netlify="true">
+                        <input type="hidden" name="form-name" value="submitContact"/>
                         <p>
                             <label>Your Name: <br/> <input type="text" name="name" size="40" /></label>
                         </p>
