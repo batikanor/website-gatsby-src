@@ -4,7 +4,7 @@ import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 import Layout from '../components/layout'
 import Head from "../components/head"
-
+import contactStyles from './contact.module.scss'
 export const query = graphql`
 query {
     site {
@@ -33,6 +33,23 @@ const ContactPage = ( props ) => {
                 </li>
                 <li>
                     Telegram: <Link to="http://t.me/batikanor">t.me/batikanor</Link>
+                </li>
+                <li>
+                    Submit a form that will be emailed to me:
+                    <form className={contactStyles.netlifyForm} name="submitContact" action="/"  netlify netlify-honeypot="bot-field">
+                        <p>
+                            <label>Your Name: <br/> <input type="text" name="name" size="40" /></label>
+                        </p>
+                        <p>
+                            <label>Content: <br/> <textarea name="content" cols="40" rows="5"></textarea> </label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                        <p className={contactStyles.netlifyFormBotField}>
+                            <label>This shouldn't be filled out: <input name="bot-field"></input></label>
+                        </p>
+                    </form> 
                 </li>
             </ul>
 
