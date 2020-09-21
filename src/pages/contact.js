@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+import { trackCustomEvent, OutboundLink } from 'gatsby-plugin-google-analytics'
+
+
 
 import Layout from '../components/layout'
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
+
+
 export const query = graphql`
 query {
     site {
@@ -29,10 +34,10 @@ const ContactPage = ( props ) => {
             <hr/>
             <ul>
                 <li>
-                    Email: <a href="mailto: batikanor@gmail.com?subject=Batikanor Website Feedback&body=I've found this email address from your homepage.">batikanor@gmail.com</a>
+                    Email: <OutboundLink href="mailto: batikanor@gmail.com?subject=Batikanor Website Feedback&body=I've found this email address from your homepage.">batikanor@gmail.com</OutboundLink>
                 </li>
                 <li>
-                    Telegram: <Link to="http://t.me/batikanor">t.me/batikanor</Link>
+                    Telegram: <OutboundLink href="http://t.me/batikanor" target="_blank" >t.me/batikanor </OutboundLink>
                 </li>
                 <li>
                     Submit a form that will be emailed to me (There is a spam filter, your post may not reach me):
@@ -48,7 +53,14 @@ const ContactPage = ( props ) => {
                             <label>This shouldn't be filled out: <input name="bot-field"></input></label>
                         </p>
                         <p>
-                            <button type="submit">Send</button>
+                            <button type="submit" onClick={e => {
+                        e.preventDefault()
+                        trackCustomEvent({
+                            category: 'Form Filling',
+                            action: 'click',
+                            label: 'Netlify contact form',
+                        })
+                    }} >Send</button>
                         </p>
 
                     </form> 
