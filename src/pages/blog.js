@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { useFlexSearch } from 'react-use-flexsearch'
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
 import Head from "../components/head"
-import { Formik, Form, Field } from 'formik'
 
 
 
@@ -13,10 +12,7 @@ import { Formik, Form, Field } from 'formik'
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
     query {
-        localSearchPages {
-            index
-            store
-        }
+ 
         allContentfulBlogPost(
           sort: { 
             fields: createdAt,
@@ -37,32 +33,12 @@ const BlogPage = () => {
       
 `)
 
-const { index, store } = data.localSearchPages
-const [query, setQuery] = useState("")
-const results = useFlexSearch(query, index, store)
+
     return (
         <Layout>
             <Head title="Blog"/>
             <h1>Blog</h1>
-            <div>
-                <Formik
-                    initialValues={{ query: '' }}
-                    onSubmit={(values, { setSubmitting }) => {
-                    setQuery(values.query)
-                    setSubmitting(false)
-                    }}
-                >
-                    <Form>
-                    <Field name="query" />
-                    </Form>
-                </Formik>
-                <h1>Results</h1>
-                <ul>
-                    {results.map(result => (
-                    <li key={result.slug}>{result.title}</li>
-                    ))}
-                </ul>
-            </div>
+            <p>You don't need searching! Indexing the site was not worth it, use the search functionality of your browser!</p>
             <ol className={blogStyles.blogPosts}>
                 {data.allContentfulBlogPost.edges && data.allContentfulBlogPost.edges.map((edge) => {
                    //let color = 'red';
