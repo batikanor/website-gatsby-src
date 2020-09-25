@@ -1,3 +1,26 @@
+@import '../styles/variables.scss';
+
 .footer {
-    margin-top: 4rem;
+    margin-top: 7rem;
+    background-color: $footer-background-color;
+    border-radius: 1px;
+    filter: drop-shadow(20px 10px 2px $footer-background-color);
+    color: $footer-content-color;
+    text-align: center;
+    filter: drop-shadow(0px 0px 4px $footer-background-color);
+    border-top: 0.1px solid $footer-content-color;
+    border-bottom: 0.1px solid $footer-content-color;
+    
+    hr {
+        border-color: $footer-content-color;
+    }
+    hr:before {
+        border-color: $footer-content-color;
+
+    }
+    hr:after {
+        color: $footer-content-color;
+        background-color: $footer-background-color;
+        border-color: $footer-content-color;
+    }
 }

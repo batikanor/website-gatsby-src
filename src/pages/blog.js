@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { useFlexSearch } from 'react-use-flexsearch'
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
 import Head from "../components/head"
@@ -29,6 +28,7 @@ const BlogPage = () => {
             }
           }
         }
+
       }
       
 `)
@@ -38,7 +38,7 @@ const BlogPage = () => {
         <Layout>
             <Head title="Blog"/>
             <h1>Blog</h1>
-            <p>You don't need searching! Indexing the site was not worth it, use the search functionality of your browser!</p>
+            <p>There were two options to add a searching feature to this website: API-based search engines or local searching offline. I chose neither, please use the search functionality of your browser. Browsers without one are simply not supported.</p>
             <ol className={blogStyles.blogPosts}>
                 {data.allContentfulBlogPost.edges && data.allContentfulBlogPost.edges.map((edge) => {
                    //let color = 'red';

@@ -1,6 +1,7 @@
+@import './variables.scss';
 
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
-// + My changes on the end
+// + My changes on the end and before the start
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -660,7 +661,7 @@ hr:after {
 	position: relative;
 	top: -14px;
 	padding: 0 10px;
-	background: #fdfeef;
+	background: $container-background-color;
 	color: #8c8b8b;
 	font-size: 18px;
 	-webkit-transform: rotate(90deg);

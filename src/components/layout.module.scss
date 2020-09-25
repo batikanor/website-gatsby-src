@@ -1,17 +1,18 @@
-$breakpoint-smartphones-landscape: 768px;
+@import '../styles/index.scss';
 .background {
     
-    background-color: #e9bcb7;
-    background-image: linear-gradient(289deg, #4b004d 0%, #4b604d  74%);
-    // #29524a
+    background-image: linear-gradient(289deg, $background-purple 0%, $background-green 74%);
     width: 100%;
 }
 .container {
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 2px white);
+
     margin: 0 auto;
     width: 75%;
     //max-width: 72rem;
     padding: 2rem;
-    background-color: #fdfeef;
+    background-color: $container-background-color;
     display: flex;
     flex-direction: column; // Default value was rov
     min-height: 100vh; // viewport height
@@ -19,21 +20,19 @@ $breakpoint-smartphones-landscape: 768px;
 
 .content {
     flex-grow: 1;
-    color: #111111;
+    color: $content-color;
 }
 
 
 
-/* Desktops and laptops ----------- */
-@media only screen and (max-width : 1824px) {
+@media only screen and (max-width : $breakpoint-laptops) {
     .container {
         width: 78%;
 
     }
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (max-width : 1224px) {
+@media only screen and (max-width : $breakpoint-tablets-landscape) {
     .container {
         width: 85%;
 
@@ -41,15 +40,13 @@ $breakpoint-smartphones-landscape: 768px;
 
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : $breakpoint-tablets-portrait) {
     .container {
         width: 88%;
 
     }
 }
 
-/* Smartphones (landscape) ----------- */
 @media only screen and (max-width : $breakpoint-smartphones-landscape) {
     .container {
         width: 90%;
@@ -57,16 +54,14 @@ $breakpoint-smartphones-landscape: 768px;
     }
 }
 
-/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
-@media only screen and (max-width : 640px) {
+@media only screen and (max-width : $breakpoint-tablets-portrait-1) {
     .container {
         width: 92%;
 
     }
 }
 
-/* Smartphones (portrait) (ie: Galaxy 1) */
-@media only screen and (max-width : 321px) {
+@media only screen and (max-width : $breakpoint-tablets-portrait-2) {
     .container {
         width: 95%;
     }

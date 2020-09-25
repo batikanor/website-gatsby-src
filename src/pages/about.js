@@ -19,6 +19,10 @@ const AboutPage = () => {
             <p>
                 My initial wish was to become an academician in the future. But today, more and more companies are providing their employees with more freedom and therefore are not blocking their creativity, so I'm not that sure anymore. I'm open for all sorts of offers.
             </p>
+
+            <hr/>
+            <p>The rest of this page is filled with trivial information, and it isn't advised for anyone to read.</p>                
+
             <h2>Hobbies</h2>
             <ul>
 
@@ -192,6 +196,11 @@ const AboutPage = () => {
                 <tr>
                     <td>Plombieres - Belgium</td>
                     <td>2018</td>
+                    <td>{`<`}1 Day</td>
+                </tr>
+                <tr>
+                    <td>Denizli - Turkey</td>
+                    <td>2019</td>
                     <td>{`<`}1 Day</td>
                 </tr>
             </table>

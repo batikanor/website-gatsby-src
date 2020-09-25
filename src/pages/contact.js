@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import { trackCustomEvent, OutboundLink } from 'gatsby-plugin-google-analytics'
 

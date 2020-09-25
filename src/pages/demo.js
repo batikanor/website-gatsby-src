@@ -30,6 +30,7 @@ const DemoPage = (props) => {
             <p>
                 I will be testing some things in here. No need to look ...
             </p>
+            <hr/>
             <Search />
             
 

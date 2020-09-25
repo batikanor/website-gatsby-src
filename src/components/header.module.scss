@@ -83,6 +83,33 @@ $breakpoint-smartphones-landscape: 768px;
 
 
 
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1824px) {
+    .container {
+        width: 78%;
+    }
+    .nav-list {
+        justify-content: space-between;
+        margin: 0 0 0 0;
+        display: inline;
+    }
+    .nav-item {
+        float: left;
+        font-size: 1.3rem;
+        text-decoration: none;
+        text-align: center;
+
+    }
+    .nav-item:hover {
+        color: #111111;
+        font-size: 1.5rem;
+        animation-name: navItemSelect2;
+
+    }
+
+}
+
+
 /* iPads (portrait) and Below----------- */
 @media only screen and (max-width : 1024px) {
     .title {
