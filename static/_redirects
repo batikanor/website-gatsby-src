@@ -1,0 +1,19 @@
+# netlify redirects
+# from_url to_url
+
+# Shortened blog post links
+
+/blog/gatsby         /blog/gatsby-tutorial/
+.
+.
+.
+
+
+# splats
+
+/b*             /blog/:splat
+
+
+# External
+
+/github         https://github.com/batikanor
