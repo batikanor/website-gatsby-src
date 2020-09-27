@@ -17,7 +17,6 @@
 
 /b*             /blog/:splat
 /link*          /l/:splat
-/t/*            https://t.me/:splat
 
 # External quick
 
@@ -25,11 +24,20 @@
 /git            https://github.com/batikanor
 
 /linkedin       https://www.linkedin.com/in/batikanor/
-/discord        discord.gg/sDGA3VP
+/discord        https://www.discord.gg/sDGA3VP
+
+
+# External popular
+
+/t/*            https://t.me/:splat
+/g/*            https://www.github.com/*
+## Returns first google result.
+/s/*            http://www.google.com/search?btnI&q=:splat
+
 
 # External regular
 
 /l/tau          http://www.tau.edu.tr/
 /l/ovgu         https://www.ovgu.de/
 /l/tauogrenci   https://t.me/joinchat/I6HBXBEoew4FUab8hmSCiw
-/l/discord      discord.gg/sDGA3VP
+/l/discord      https://www.discord.gg/sDGA3VP
