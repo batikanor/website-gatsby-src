@@ -33,8 +33,8 @@
 /g/*            https://www.github.com/*
 ## Returns first google result.
 /s/*            http://www.google.com/search?btnI&q=:splat
-
-
+## Returns first duckduckgo result (region independent! and better in many other ways if you ask me)
+/d/*            https://duckduckgo.com/?q=!ducky+=:splat
 # External regular
 
 /l/tau          http://www.tau.edu.tr/
