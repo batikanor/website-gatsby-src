@@ -15,7 +15,7 @@
 # splats
 
 /b*             /blog/:splat
-/l*             /link/:splat
+/link*          /l/:splat
 
 
 # External quick
