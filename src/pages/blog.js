@@ -38,7 +38,7 @@ const BlogPage = () => {
         <Layout>
             <Head title="Blog"/>
             <h1>Blog</h1>
-            <p>There were two options to add a searching feature to this website: API-based search engines or local searching offline. I chose neither, please use the search functionality of your browser. Browsers without one are simply not supported.</p>
+            <p>There were two options to add a searching feature to this website: API-based search engines or local searching offline. I chose neither, please use the search functionality of your browser. Browsers without one are simply not supported. This was simply the most efficient solution for everyone.</p>
             <ol className={blogStyles.blogPosts}>
                 {data.allContentfulBlogPost.edges && data.allContentfulBlogPost.edges.map((edge) => {
                    //let color = 'red';

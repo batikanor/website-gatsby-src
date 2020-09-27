@@ -12,10 +12,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 edges {
                     node {
                         slug
+                        tags {
+                            tag
+                        }
                     }
                 }
             }
-   
+            
             site {
                 siteMetadata {
                     url
@@ -36,4 +39,5 @@ module.exports.createPages = async ({ graphql, actions }) => {
             }
         })
     })
+  
 }
