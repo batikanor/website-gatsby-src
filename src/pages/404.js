@@ -12,6 +12,10 @@ const NotFound = () => {
             <Head title="404"/>
             <h1> 404 Page Not Found  </h1>
             <p><Link to="/">Go back to Main Page</Link></p>
+            <hr/>
+            <p>There may be several reasons why you've found yourself here. I redirect people to this page for almost every wrong-doing these days. You may've used a wrong type of input on some of my web-based projects, or just have typed a false url while trying to access a portion of one of my sites.</p>
+
+            <p>It is OK though, try again.</p>
         </Layout>
     )
 }
