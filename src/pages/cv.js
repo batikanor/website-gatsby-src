@@ -40,6 +40,7 @@ const CVPage = ( props ) => {
             <h2>Turkish</h2>
             <p>NOT UP TO DATE</p>
             <hr/>
+            <a id="advise"/>
             <Disqus config={disqusConfig}/>
         </Layout>
         )

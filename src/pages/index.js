@@ -25,10 +25,10 @@ const IndexPage = (props) => {
   return (
     <Layout>
       <Head title="Main Page"/>
-      <h1>Hello,</h1>
+
       <CommentCount config={disqusConfig} placeholder={'...'} />
       <hr/>
-      <h2>I'm <abbr title="Pronounced Buh - th - cun">Batıkan</abbr> and this is my homepage.</h2>
+      
       <p>The fourth letter of my name "ı" (i without a dot) is pronounced the way "e" is pronounced while saying "folder"</p>
       <ul>
         <p>On this website you can:</p>
