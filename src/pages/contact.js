@@ -54,17 +54,19 @@ const ContactPage = ( props ) => {
                         </p>
                         <p>
                             <button type="submit" onClick={e => {
-                        e.preventDefault()
-                        trackCustomEvent({
-                            category: 'Form Filling',
-                            action: 'click',
-                            label: 'Netlify contact form',
-                        })
-                    }} >Send</button>
+                                //e.preventDefault() //< I need additional js to make this work right with netlify
+                                trackCustomEvent({
+                                    category: 'Form Filling',
+                                    action: 'click',
+                                    label: 'Netlify contact form',
+                                })
+                            }}>Send</button>
                         </p>
 
                     </form> 
+
                 </li>
+
             </ul>
 
             
