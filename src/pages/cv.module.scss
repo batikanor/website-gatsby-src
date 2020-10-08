@@ -5,6 +5,7 @@
     color: darkBlue;
 }
 .cv-div {
-    height: 900px;
-    max-width: 880px;
+    // 21cm * 29.7cm are default for A4
+    height: 29.7cm;//900px;
+    max-width: 21cm;//800px; //880
 }
