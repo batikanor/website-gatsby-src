@@ -6,6 +6,7 @@
 }
 .cv-div {
     // 21cm * 29.7cm are default for A4
-    height: 29.7cm;//900px;
+    max-height: 29.7cm;//900px;
+    height: 100rem;
     max-width: 21cm;//800px; //880
 }
