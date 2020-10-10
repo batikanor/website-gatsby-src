@@ -5,10 +5,6 @@
 # Shortened blog post links
 
 /blog/gatsby         /blog/gatsby-tutorial/
-.
-.
-.
-
 
 
 
@@ -17,7 +13,7 @@
 
 /b*             /blog/:splat
 /link*          /l/:splat
-
+/lx*            https://batikanor.com/:splat
 # External quick
 
 /github         https://github.com/batikanor
