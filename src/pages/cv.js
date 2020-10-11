@@ -40,7 +40,7 @@ const CVPage = ( props ) => {
             <p>My Resume in English, German and Turkish are accesible below. If you want a more detailed one please <Link to="/contact">Contact me!</Link> </p>
             <h2 class={cvStyles.cvCaption}>English <a href="/l/cv/en/fullscreen" target="_blank" rel="noreferrer"> (Click for fullscreen)</a> <a href="/l/cv/en" target="_blank" rel="noreferrer"> (Click for PDF)</a> </h2>
             <div className={cvStyles.cvDiv}> 
-            <iframe className={cvStyles.cv} title="English CV" width="100%" height="100%" seamless src="/l/cv/embed/en"></iframe>
+            <iframe className={cvStyles.cv} title="English CV" width="100%" height="100%" seamless src="/l/cv/en/embed"></iframe>
 
             </div>
             <h2>German</h2>
