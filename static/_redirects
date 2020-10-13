@@ -33,8 +33,9 @@
 /d/*                                    https://duckduckgo.com/?q=!ducky+=:splat
 ## Opens up google translate from one language to another with given text
 /tr/ sl=:sl tl=:tl text=:text           https://translate.google.com/#view=home&op=translate&sl=:sl&tl=:tl&text=:text
-/w/*                                    https://wa.me/:splat
+
 /w/tr/*                                 https://wa.me/90:splat
+/w/*                                    https://wa.me/:splat
 
 # External regular
 
