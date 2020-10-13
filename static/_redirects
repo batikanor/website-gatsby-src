@@ -32,8 +32,9 @@
 ## Returns first duckduckgo result (region independent! and better in many other ways if you ask me)
 /d/*                                    https://duckduckgo.com/?q=!ducky+=:splat
 ## Opens up google translate from one language to another with given text
-/tr/ sl=:sl tl=:tl text=:text            https://translate.google.com/#view=home&op=translate&sl=:sl&tl=:tl&text=:text
-
+/tr/ sl=:sl tl=:tl text=:text           https://translate.google.com/#view=home&op=translate&sl=:sl&tl=:tl&text=:text
+/w/*                                    https://wa.me/:splat
+/w/tr/                                  https://wa.me/90:splat
 
 # External regular
 
@@ -45,6 +46,7 @@
 /l/cv/en            https://docs.google.com/document/d/1ZVQcdNvOR46HBUCtVy6XKFOXocRYL9-TR_LLrRfJ2T8/export?format=pdf
 /l/cv/en/embed      https://docs.google.com/document/d/e/2PACX-1vTI_n0Epv5KdWd5cO9d_78Lbvzvpb2gN7IqtrOPrYEpLHBd9islycKCqAk3BoDcH0fEOMzypmLvVQan/pub?embedded=true
 /l/cv/en/fullscreen https://docs.google.com/document/d/e/2PACX-1vTI_n0Epv5KdWd5cO9d_78Lbvzvpb2gN7IqtrOPrYEpLHBd9islycKCqAk3BoDcH0fEOMzypmLvVQan/pub?
+
 
 
 # External extra 
