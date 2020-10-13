@@ -36,7 +36,7 @@
 
 /w/tr/*                                 https://wa.me/90:splat
 /w/*                                    https://wa.me/:splat
-/m/*                                    mailto: batikanor@gmail.com?subject=:splat
+/m/*                                    mailto:batikanor@gmail.com?subject=:splat # Doesn't work :(
 # External regular
 
 /l/tau              http://www.tau.edu.tr/
