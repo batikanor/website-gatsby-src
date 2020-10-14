@@ -9,7 +9,7 @@ Domain & Aliases: batikanor.com / linkx.tk / ubistandard.ml
 
 # Redirects
 
-(For every 'batikanor.com' present below, one of the aliases above could also be used).
+(For every 'batikanor.com' present below, one of the aliases above could've also been used).
 * batikanor.com/d/hello%20world --> Searches "hello world" on duckduckgo and yields the first result.
 * batikanor.com/s/hello%20world --> Searches "hello world" on google and yields the first result (Asks if you are sure, uses your locale for the search).
 * batikanor.com/w/905999999999 --> Opens a chat message to the whatsapp account with the number: +90 599 999 99 99.
