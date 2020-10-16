@@ -21,16 +21,17 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .header {
+    //outline-color: black;
+    //outline-style: solid;
+    //outline-width: 2px;
+    //outline-offset: -7px;
     padding: 1rem 2rem 3rem;
     text-align: center;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.04);
-    border-radius: 20px;
     //background-color: lightGray;
-    filter: sepia(100%);
+    //filter: sepia(100%);
 
-    background: grayscale(30%);
-    border-top-left-radius: 200px;
     margin-bottom: 1rem;
+    display: block;
 
 
 }
@@ -45,33 +46,42 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .subtitle {
-    color: #555666;
+    color: #555444;
     font-size: 1.5rem;
 
 
+}
+
+.nav-divider {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    align-self: flex-start;
+}
+.nav-divider:after {
+    content: "";
 }
 .nav-div {
 
 }
 .nav {
     display: flexbox;
+
+
 }
 
 .nav-list {
 
     display: flex;
     //display: flex; //< ltr
-    list-style-type: none;
+    list-style: none;
     margin: 0;
 
-    
-    
-
+ 
 }
 
 .nav-item {
     float: left;
-    color: #555555;
+    color: #444444;
     font-size: 1.7rem;
     margin-right: 2rem;
     text-decoration: none;
@@ -89,6 +99,7 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .active-nav-item {
+    
     color:rgb(35, 10, 105);
     
 }
