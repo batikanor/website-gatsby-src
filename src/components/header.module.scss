@@ -21,8 +21,17 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .header {
-    padding: 1rem 0 3rem;
+    padding: 1rem 2rem 3rem;
     text-align: center;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    //background-color: lightGray;
+    filter: sepia(100%);
+
+    background: grayscale(30%);
+    border-top-left-radius: 200px;
+    margin-bottom: 1rem;
+
 
 }
 
@@ -38,13 +47,18 @@ $breakpoint-smartphones-landscape: 768px;
 .subtitle {
     color: #555666;
     font-size: 1.5rem;
-}
 
+
+}
+.nav-div {
+
+}
 .nav {
     display: flexbox;
 }
 
 .nav-list {
+
     display: flex;
     //display: flex; //< ltr
     list-style-type: none;
@@ -64,7 +78,6 @@ $breakpoint-smartphones-landscape: 768px;
     text-align: center;
     font-family: 'bigfish';
     font-weight: bolder;
-    
 
 }
 
