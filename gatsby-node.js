@@ -2,10 +2,11 @@ const path = require('path')
 
 
 
-module.exports.createPages = async ({ graphql, actions }) => {
+module.exports.createPages = async ({ graphql, actions, reporter }, options) => {
     const {createPage} = actions
     const blogTemplate = path.resolve('./src/templates/blog-post.js')
-    
+    const pageTemplate = require.resolve('./src/templates/page.js');
+
     const res = await graphql(`
         query {
             allContentfulBlogPost {
@@ -16,7 +17,14 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
-            
+            allNotionPageBlog {
+                edges {
+                  node {
+                    pageId
+                    slug
+                  }
+                }
+              }
             site {
                 siteMetadata {
                     url
@@ -37,41 +45,21 @@ module.exports.createPages = async ({ graphql, actions }) => {
             }
         })
     })
+    if (res.errors) {
+        reporter.panic('error loading events', result.errors);
+        return;
+      }
+    res.data.allNotionPageBlog.edges.forEach(({ node }) => {
+        const path = `/gatsby-source-notion-so/${node.slug}`;
+        createPage({
+          path,
+          component: pageTemplate,
+          context: {
+            pathSlug: path,
+            pageId: node.pageId,
+          },
+        });
+      });
+
   
 }
-exports.createPages = async ({ graphql, actions, reporter }, options) => {
-    const { createPage } = actions;
-  
-    const pageTemplate = require.resolve('./src/templates/page.js');
-  
-    const result = await graphql(
-      `
-        query {
-          allNotionPageBlog {
-            edges {
-              node {
-                pageId
-                slug
-              }
-            }
-          }
-        }
-      `,
-    );
-    if (result.errors) {
-      reporter.panic('error loading events', result.errors);
-      return;
-    }
-  
-    result.data.allNotionPageBlog.edges.forEach(({ node }) => {
-      const path = `/gatsby-source-notion-so/${node.slug}`;
-      createPage({
-        path,
-        component: pageTemplate,
-        context: {
-          pathSlug: path,
-          pageId: node.pageId,
-        },
-      });
-    });
-  };
