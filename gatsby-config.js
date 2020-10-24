@@ -9,7 +9,7 @@ module.exports = { //< Because this is a node.js file
     title: 'Batikanor',
     author: 'Batıkan Bora ORMANCI',
     url: 'http://www.batikanor.com',
-    basepath: '/'
+    basePath: '/'
   },
 
   plugins: [

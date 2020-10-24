@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/notionLayout';
 import ArticleBlockLink from '../components/ArticleBlockLink';
 import { graphql } from 'gatsby';
 import Head from "../components/head"
