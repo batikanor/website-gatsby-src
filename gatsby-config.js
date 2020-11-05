@@ -13,15 +13,7 @@ module.exports = { //< Because this is a node.js file
   },
 
   plugins: [
-    {
-      resolve: 'gatsby-source-notionso',
-      options: {
-        name: 'Blog',
-        rootPageUrl:
-          'https://www.notion.so/Publicized-Notes-f2c37c9904a3431b82df56035c769574',
-        debug: false,
-      },
-    },
+
     // {
     //   resolve: 'gatsby-plugin-local-search',
     //   options: {

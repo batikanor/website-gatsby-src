@@ -2,10 +2,9 @@ const path = require('path')
 
 
 
-module.exports.createPages = async ({ graphql, actions, reporter }, options) => {
+module.exports.createPages = async ({ graphql, actions }, options) => {
     const {createPage} = actions
     const blogTemplate = path.resolve('./src/templates/blog-post.js')
-    const pageTemplate = require.resolve('./src/templates/page.js');
 
     const res = await graphql(`
         query {
@@ -17,14 +16,6 @@ module.exports.createPages = async ({ graphql, actions, reporter }, options) => 
                     }
                 }
             }
-            allNotionPageBlog {
-                edges {
-                  node {
-                    pageId
-                    slug
-                  }
-                }
-              }
             site {
                 siteMetadata {
                     url
@@ -45,21 +36,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }, options) => 
             }
         })
     })
-    if (res.errors) {
-        reporter.panic('error loading events', result.errors);
-        return;
-      }
-    res.data.allNotionPageBlog.edges.forEach(({ node }) => {
-        const path = `/gatsby-source-notion-so/${node.slug}`;
-        createPage({
-          path,
-          component: pageTemplate,
-          context: {
-            pathSlug: path,
-            pageId: node.pageId,
-          },
-        });
-      });
+
 
   
 }
