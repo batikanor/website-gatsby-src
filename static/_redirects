@@ -9,11 +9,8 @@
 
 
 
-# splats
 
-/b*             /blog/:splat
-/link*          /l/:splat
-/lx*            https://batikanor.com/:splat
+
 # External quick
 
 /github         https://github.com/batikanor
@@ -53,3 +50,11 @@
 
 # External extra 
 /l/quantum/programming/hackathon/agile-board/   https://trello.com/b/F86XbTnN/ubistandrad-qworld-hackathon-working-board
+
+
+
+# splats # if these had ben above, /linkedin would become /l/kedin
+
+/b*             /blog/:splat
+/link*          /l/:splat 
+/lx*            https://batikanor.com/:splat
