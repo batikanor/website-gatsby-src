@@ -8,7 +8,7 @@
 
 
 
-
+# !!important note for later !!: Make it so that all navigation within the site starts with /x/ so that the redirects wont collide
 
 
 # External quick
@@ -19,6 +19,8 @@
 /binance/theta          https://www.binance.com/tr/register?ref=DJM37ZA8
 /binance/litiontr       https://www.binance.com/tr/register?ref=AXUFOUDA
 /binance/chiliz         https://www.binance.com/tr/register?ref=CWL4AY4H
+
+/chiliz                 https://www.chiliz.net/register/3IKw4w
 
 /cex                    https://cex.io/r/0/up137989956/0/
 
