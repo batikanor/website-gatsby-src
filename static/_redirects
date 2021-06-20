@@ -85,6 +85,7 @@
 /w/*                                    https://wa.me/:splat
 /m/*                                    mailto:batikanor@gmail.com?subject=:splat # Doesn't work :(
 
+# scihub
 /sh/*                                   https://sci-hub.se/:splat
 
 

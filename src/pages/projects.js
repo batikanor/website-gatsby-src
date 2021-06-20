@@ -9,7 +9,9 @@ const ProjectsPage = () => {
             <Head title="Projects"/>
             <h1>Projects</h1>
             <p>
-                I will publish a blog post for every single project and link to them here. They won't be chronologically ordered, and this page won't include most (if not any) of my projects before September 2020.
+                Later on I may publish blog posts for some of the projects and link to them here.
+
+                See my <a href="https://batikanor.com/git">github profile</a> and my <a href="https://batikanor.com/cv">cv</a> for more info on my projects.
                 <ol>
 
 
