@@ -37,13 +37,8 @@
 /linkedin               https://www.linkedin.com/in/batikanor/
 /discord                https://www.discord.gg/sDGA3VP
 
-/qsbtgu                 https://www.notion.so/QSB-TGU-f11e237414f54e1cbcf2b1d9da378e23
-/qsbtgu/join            https://docs.google.com/forms/d/1BKCAeXY8IhCOKUwGrbkpJMd8upKktrNPnPRgGplfIjs
-/qsbtgu/discord         https://discord.gg/MW8VVmrKx5
-/qsbtgu/insta           https://www.instagram.com/qsbtgu/
-/qsbtgu/instagram       https://www.instagram.com/qsbtgu/
-/qsbtgu/linkedin        https://www.linkedin.com/company/72288715/      
-/qsbtgu/certificates    https://www.notion.so/Sertifikalar-cccfaf476ad3430caa5d878f903b64db
+
+
 
 /studienplan            https://docs.google.com/spreadsheets/d/1qipDNQpO0M6RGvtvhwfnOB27y8VinsrbrbJin5_7i_4/
 
@@ -59,12 +54,29 @@
 
 /inf211/presentation    https://docs.google.com/presentation/d/1gnDlGdrvmWO1MEH6EmnfRm6RtUhf2MOOtsTT8Y_ru6Q/edit?usp=sharing # editable link from inside tgu
 
+
+
+/qsbtgu*                /qsb/:splat
+/qsb                  	https://www.notion.so/QSB-TGU-f11e237414f54e1cbcf2b1d9da378e23
+/qsb/join               https://docs.google.com/forms/d/1BKCAeXY8IhCOKUwGrbkpJMd8upKktrNPnPRgGplfIjs
+/qsb/discord            https://discord.gg/MW8VVmrKx5
+/qsb/insta              https://www.instagram.com/qsbtgu/
+/qsb/instagram          https://www.instagram.com/qsbtgu/
+/qsb/linkedin           https://www.linkedin.com/company/72288715/      
+/qsb/certificates       https://www.notion.so/Sertifikalar-cccfaf476ad3430caa5d878f903b64db
+
+
+/urctgu*                    /urc/:splat
 /urc                        https://www.notion.so/Undergradate-Research-Club-of-the-Turkish-German-University-URC-TGU-5e4bcd4f0d3a4eebbca392f2b8a29537
 /urc/sheets                 https://docs.google.com/spreadsheets/d/1fw7mgV7PHfsoaIKoaVyS7MqP3TVv0t52QPp9fQWogP0/edit#gid=0
 /urc/notebook               https://1drv.ms/u/s!AskhFuTROVDWgSn8Vg4yr9sJnWvZ?e=tcwKOa
 /urc/meet                   https://stone-scooter-70f.notion.site/Meeting-Info-5170d04a12cf4b978c17681b9a0a8f2f
 /urc/meeting                https://linkx.tk/urc/meet
 /urc/metroretro             https://metroretro.io/board/LBW6BN7A8DPW
+/urc/linkedin               https://www.linkedin.com/company/urc-tgu/?viewAsMember=true
+/urc/insta                  https://instagram.com/urc_tgu
+/urc/instagram              /urc/insta
+/urc/twitter                https://twitter.com/urctgu
 
 
 
