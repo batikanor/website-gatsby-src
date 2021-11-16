@@ -7,6 +7,9 @@
 /blog/gatsby         /blog/gatsby-tutorial/
 
 
+# Games
+/quickfight             https://quickfight.herokuapp.com/
+
 
 # !!important note for later !!: Make it so that all navigation within the site starts with /x/ so that the redirects wont collide
 
