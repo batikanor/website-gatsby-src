@@ -24,8 +24,7 @@ const AboutPage = () => {
             <p>The rest of this page is filled with trivial information, and it isn't advised for anyone to read.</p>
             <p>Aforementioned trivial information had been removed by the author (actually commented out, which still can be read by inspecting element) due to huge amounts of cringe created by them.
 
-<div dangerouslySetInnerHTML={{__html: "
-<!--
+{/*
 //             <h2>Hobbies</h2>
 //             <ul>
 
@@ -93,7 +92,7 @@ const AboutPage = () => {
 //                 </li>
 //             </ul>
 
--->"}} />
+*/}
 
             <h2>Travels</h2>
             <p>
