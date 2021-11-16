@@ -21,80 +21,81 @@ const AboutPage = () => {
             </p>
 
             <hr/>
-            <p>The rest of this page is filled with trivial information, and it isn't advised for anyone to read.</p>                
+            <p>The rest of this page is filled with trivial information, and it isn't advised for anyone to read.</p>
+            <p>Aforementioned trivial information had been removed by the author (actually commented out, which still can be read by inspecting element) due to huge amounts of cringe created by them.
 
-            <h2>Hobbies</h2>
-            <ul>
+//             <h2>Hobbies</h2>
+//             <ul>
 
-                <li>
-                    <h3>Sports</h3>
-                    <ul>
-                        <p>I'm not that competent in any of them, it just feels good to partake in such activities occasionally.</p>
-                        <li>Basketball</li>
-                        <li>Table Tennis</li>
-                        <li>Jogging in the morning and/or along the coast</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Programming</h3>
-                    <p>I don't always code for profit. I enjoy sharing knowledge with my friends and building some practically useless applications just to see if I can</p>
-                </li>
-                <li>
-                    <h3>Computer Games</h3>
-                    <p>I like playing strategy based computer games, but lately (for at least the last 4-5 years) I almost haven't been playing any games at all. Below is a list of most of the games I've played so far. The list is unsorted and to some extent, inaccurate. Because I've probably forgotten a bunch. I don't even know why I'm putting such a list down here.</p>
-                    <ul>
-                        <li>Europa Universalis IV</li>
-                        <li>Civilization V, VI</li>
-                        <li>Team Fortress II</li>
-                        <li>Mount and Blade Warband, II Bannerlord</li>
-                        <li>Skyrim</li>
-                        <li>Minesweeper</li>
-                        <li>Solitaire</li>
-                        <li>Rocket League</li>
-                        <li>Roblox</li>
-                        <li>Minecraft</li>
-                        <li>World Of Warcraft</li>
-                        <li>Warcraft III, Frozen Throne</li>
-                        <li>Terraria</li>
-                        <li>You Have to Win the Game</li>
-                        <li>Moirai</li>
-                        <li>Online Soccer Manager</li>
-                        <li>Darkorbit</li>
-                        <li>Pro Evolution Soccer</li>
-                    </ul>
-                </li>
-                <li>
-                <h3>Uncategorized / The Rest</h3>
-                    <ul>
-                        <li>
-                            <h4>Card Tricks</h4>
-                            <p>I enjoy performing simple card tricks to my friends or even to strangers (Sadly they usually assume I'm going to ask for money, so I don't do that anymore)</p>
-                            <p>I always have a couple or so decks with me and make use of them as maybe some sort of socializing tool, but what I enjoy the most is telling how the trick was done afterwards.</p>
+//                 <li>
+//                     <h3>Sports</h3>
+//                     <ul>
+//                         <p>I'm not that competent in any of them, it just feels good to partake in such activities occasionally.</p>
+//                         <li>Basketball</li>
+//                         <li>Table Tennis</li>
+//                         <li>Jogging in the morning and/or along the coast</li>
+//                     </ul>
+//                 </li>
+//                 <li>
+//                     <h3>Programming</h3>
+//                     <p>I don't always code for profit. I enjoy sharing knowledge with my friends and building some practically useless applications just to see if I can</p>
+//                 </li>
+//                 <li>
+//                     <h3>Computer Games</h3>
+//                     <p>I like playing strategy based computer games, but lately (for at least the last 4-5 years) I almost haven't been playing any games at all. Below is a list of most of the games I've played so far. The list is unsorted and to some extent, inaccurate. Because I've probably forgotten a bunch. I don't even know why I'm putting such a list down here.</p>
+//                     <ul>
+//                         <li>Europa Universalis IV</li>
+//                         <li>Civilization V, VI</li>
+//                         <li>Team Fortress II</li>
+//                         <li>Mount and Blade Warband, II Bannerlord</li>
+//                         <li>Skyrim</li>
+//                         <li>Minesweeper</li>
+//                         <li>Solitaire</li>
+//                         <li>Rocket League</li>
+//                         <li>Roblox</li>
+//                         <li>Minecraft</li>
+//                         <li>World Of Warcraft</li>
+//                         <li>Warcraft III, Frozen Throne</li>
+//                         <li>Terraria</li>
+//                         <li>You Have to Win the Game</li>
+//                         <li>Moirai</li>
+//                         <li>Online Soccer Manager</li>
+//                         <li>Darkorbit</li>
+//                         <li>Pro Evolution Soccer</li>
+//                     </ul>
+//                 </li>
+//                 <li>
+//                 <h3>Uncategorized / The Rest</h3>
+//                     <ul>
+//                         <li>
+//                             <h4>Card Tricks</h4>
+//                             <p>I enjoy performing simple card tricks to my friends or even to strangers (Sadly they usually assume I'm going to ask for money, so I don't do that anymore)</p>
+//                             <p>I always have a couple or so decks with me and make use of them as maybe some sort of socializing tool, but what I enjoy the most is telling how the trick was done afterwards.</p>
                             
-                        </li>           
-                        <li>
-                            <h4>Mapping</h4>
-                            <p>You've probably seen a couple or so videos already, in which countries are drawn on maps and are made to
-                                fight one another to satisfy the fantasies of a youtube channel owner. I have such a hobby aswell, although I try to keep it as realistic as I can. I've partaken in online communities where people would draw maps or create mapping videos for all sorts of reasons. There were kids forming their own fantasy nations, adults trying to document history (some of them have made quite great videos actually) and some people who want to guess things about the future but make it reasonable. I don't really belong to any of these groups but I think after I get a stable occupation for myself I may return to this old hobby of mine and maybe choose a side.   </p>                            
-                        </li>
-                        <li>
-                            <h4>Solving puzzles</h4>
-                            <p>
-                                I enjoy solving puzzles and all other kinds of mysteries. I don't mean conventional puzzles in which one puts in physical parts together for them to form a meaningful image, but I mean more abstract variations of it.
-                                I take geniune satisfaction from researching a topic and putting info together to reach a meaningful conclusion. It is, in a way, an addiction aswell, whilst not being an inhumane thing. It may also be occasionally harming, but lets not get into details...
-                            </p>
-                        </li> 
-                    </ul>
+//                         </li>           
+//                         <li>
+//                             <h4>Mapping</h4>
+//                             <p>You've probably seen a couple or so videos already, in which countries are drawn on maps and are made to
+//                                 fight one another to satisfy the fantasies of a youtube channel owner. I have such a hobby aswell, although I try to keep it as realistic as I can. I've partaken in online communities where people would draw maps or create mapping videos for all sorts of reasons. There were kids forming their own fantasy nations, adults trying to document history (some of them have made quite great videos actually) and some people who want to guess things about the future but make it reasonable. I don't really belong to any of these groups but I think after I get a stable occupation for myself I may return to this old hobby of mine and maybe choose a side.   </p>                            
+//                         </li>
+//                         <li>
+//                             <h4>Solving puzzles</h4>
+//                             <p>
+//                                 I enjoy solving puzzles and all other kinds of mysteries. I don't mean conventional puzzles in which one puts in physical parts together for them to form a meaningful image, but I mean more abstract variations of it.
+//                                 I take geniune satisfaction from researching a topic and putting info together to reach a meaningful conclusion. It is, in a way, an addiction aswell, whilst not being an inhumane thing. It may also be occasionally harming, but lets not get into details...
+//                             </p>
+//                         </li> 
+//                     </ul>
                     
 
-                </li>
-            </ul>
+//                 </li>
+//             </ul>
 
 
             <h2>Travels</h2>
             <p>
                 I don't like travelling that much, but 
-                I was born in 1999 in Istanbul and have been in the following cities so far;
+                I've been in the following cities so far:
             </p>
             
             <table>
@@ -207,11 +208,12 @@ const AboutPage = () => {
             <p>I may go into detail on the <Link to="/blog">blogs page</Link> later</p>
             
             
-            <h2>Politics</h2>
-            <p>I'm apolitical, or at least I choose to seem that way to avoid any sorts of bias or offensive behaviour I may face. (I dont have that radical of a mind or that hated of a sight or personality, but still, I think this is for the greater good) That is also the reason why I haven't put my photo or such personal details on my cv.</p>
+//             <h2>Politics</h2>
+//             <p>I'm apolitical, or at least I choose to seem that way to avoid any sorts of bias or offensive behaviour I may face. (I don't have that radical of a mind or that hated of a sight or personality, but still, I think this is for the greater good) That is also the reason why I haven't put my photo or such personal details on my cv.</p>
             <hr/>
             
             <p>If you wish to acquire more info about me, check <Link to="/cv">My CV</Link> out! </p>
+            
         </Layout>
         )
 }
