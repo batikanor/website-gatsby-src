@@ -208,9 +208,10 @@ const AboutPage = () => {
             </table>
             <p>I may go into detail on the <Link to="/blog">blogs page</Link> later</p>
             
-            
+{
 //             <h2>Politics</h2>
 //             <p>I'm apolitical, or at least I choose to seem that way to avoid any sorts of bias or offensive behaviour I may face. (I don't have that radical of a mind or that hated of a sight or personality, but still, I think this is for the greater good) That is also the reason why I haven't put my photo or such personal details on my cv.</p>
+}          
             <hr/>
             
             <p>If you wish to acquire more info about me, check <Link to="/cv">My CV</Link> out! </p>
