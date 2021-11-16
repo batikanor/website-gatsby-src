@@ -12,10 +12,11 @@ const ProjectsPage = () => {
                 Later on I may publish blog posts for some of the projects and link to them here.
 
                 See my <a href="https://batikanor.com/git">github profile</a> and my <a href="https://batikanor.com/cv">cv</a> for more info on my projects.
-                <ol>
+                <ul>
+                    <li> A Quick multiplayer fighting game which was effortlessly made <a href="https://batikanor.com/quickfight">batikanor.com/QuickFight</a> </li>
 
 
-                </ol>
+                </ul>
             </p>
             
         </Layout>
