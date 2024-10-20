@@ -19,6 +19,8 @@ $breakpoint-smartphones-landscape: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px; /* Rounds the corners of the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
 }
 
 .title {
@@ -103,6 +105,7 @@ $breakpoint-smartphones-landscape: 768px;
         width: 100%;
         padding: 1rem 0;
         z-index: 1;
+        border-radius: 0 0 10px 10px; /* Rounds bottom corners in mobile */
     }
 
     .navList {
