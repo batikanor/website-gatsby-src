@@ -28,7 +28,7 @@ const CVPage = (props) => {
             <h1>CV</h1>
             <CommentCount config={disqusConfig} placeholder={'...'} />
             <hr />
-            <p>My Resume in English, German and Turkish are accessible below. If you want a more detailed one please <Link to="/contact">Contact me!</Link> </p>
+            <p>My Resume is accessible below. If you want a more detailed one please <Link to="/contact">Contact me!</Link> </p>
 
             {/* Professional looking links */}
             <h2 className={cvStyles.cvCaption}>English 
@@ -40,12 +40,6 @@ const CVPage = (props) => {
             <div className={cvStyles.cvDiv}>
                 <iframe className={cvStyles.cv} title="English CV" seamless src="/l/cv/en/embed"></iframe>
             </div>
-
-            <h2>German</h2>
-            <p>NOT UP TO DATE</p>
-
-            <h2>Turkish</h2>
-            <p>NOT UP TO DATE</p>
 
             <hr />
             <Disqus config={disqusConfig} />
