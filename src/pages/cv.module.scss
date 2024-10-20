@@ -3,6 +3,11 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: bold;
+
+    display: flex;                // Enable Flexbox
+    flex-wrap: wrap;              // Allow items to wrap to the next line
+    gap: 1rem;                    // Define the gap between items
+    align-items: center;          // Vertically center the items (optional)
 }
 
 .cv {
