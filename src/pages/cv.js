@@ -31,7 +31,7 @@ const CVPage = (props) => {
             <p>My Resume is accessible below. If you want a more detailed one please <Link to="/contact">Contact me!</Link> </p>
 
             {/* Professional looking links */}
-            <h2 className={cvStyles.cvCaption}>English 
+            <h2 className={cvStyles.cvCaption}>
                 <a className={cvStyles.cvLink} href="/l/cv/en/fullscreen" target="_blank" rel="noreferrer">Fullscreen</a> 
                 <a className={cvStyles.cvLink} href="/l/cv/en" target="_blank" rel="noreferrer">Download PDF</a>
             </h2>
