@@ -36,21 +36,21 @@ const Header = () => {
                         <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/blog">Blog</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/about">About</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/cv">CV</Link>
                         </li>
                         <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/contact">Contact</Link>
                         </li>                    
-                        <li>
+                        {/* <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/projects">Projects</Link>
                         </li>                    
                         <li>
                             <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to = "/demo">Demo</Link>
-                        </li>      
+                        </li>       */}
                     </ul>
                 </nav>
             </div>
