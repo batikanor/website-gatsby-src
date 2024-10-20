@@ -1,75 +1,76 @@
 @import '../styles/index.scss';
+
 .background {
-    
     background: linear-gradient(289deg, $background-purple 0%, $background-green 74%);
     width: 100%;
+    min-height: 100vh; // Ensure the background covers the entire height
 }
+
 .container {
     border-radius: 20px;
     border-top-left-radius: 150px;
-    filter: drop-shadow(0px 0px 10px black);
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1)); // Softer shadow for a professional feel
     margin: 0 auto;
     width: 75%;
-    //max-width: 72rem;
     padding: 2rem;
-    background-color: $container-background-color;
+    background-color: rgba(255, 255, 255, 0.9); // Slightly darker, semi-transparent white background
     display: flex;
-    flex-direction: column; // Default value was rov
-    min-height: 100vh; // viewport height
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .logos {
-    padding: 10px;
-
+    padding: 20px;
     text-align: center;
 }
 
 .logo {
     border-radius: 8px;
-    width: 50px;
-    margin-right: 10px;
+    width: 40px; // Reduced size for a more refined look
+    margin-right: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
 }
 
 .content {
     flex-grow: 1;
     color: $content-color;
+    font-size: 1.1rem; // Refined typography for better readability
+    line-height: 1.6; // Ensure comfortable line spacing
 }
 
-
-
+// Adjusting responsiveness for better alignment on smaller devices
 @media only screen and (max-width : $breakpoint-laptops) {
     .container {
         width: 78%;
-
     }
 }
 
 @media only screen and (max-width : $breakpoint-tablets-landscape) {
     .container {
         width: 85%;
-
     }
-
 }
 
 @media only screen and (max-width : $breakpoint-tablets-portrait) {
     .container {
         width: 88%;
-
     }
 }
 
 @media only screen and (max-width : $breakpoint-smartphones-landscape) {
     .container {
         width: 90%;
-
     }
 }
 
 @media only screen and (max-width : $breakpoint-tablets-portrait-1) {
     .container {
         width: 92%;
-
     }
 }
 
