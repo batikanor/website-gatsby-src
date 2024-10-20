@@ -35,9 +35,9 @@ const IndexPage = (props) => {
         <li>Read my <Link to="/blog">blog posts</Link></li>
         <li>Read my <Link to="/cv">Resume</Link></li>
         <li>See my <Link to="/contact">contact info</Link></li>
-        <li>Learn about <Link to="/projects">the projects</Link> I've been involved in.</li>
+        {/* <li>Learn about <Link to="/projects">the projects</Link> I've been involved in.</li> */}
       </ul>
-      <p>To learn more about me <Link to="/about">click here</Link></p>
+      {/* <p>To learn more about me <Link to="/about">click here</Link></p> */}
         
       <hr/>
       <Disqus config={disqusConfig}/>

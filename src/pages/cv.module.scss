@@ -1,12 +1,45 @@
 .cv-caption {
-    color:darkBlue;
+    color: darkBlue;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
+
 .cv {
     color: darkBlue;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
+
+// 21cm * 29.7cm are default for A4
 .cv-div {
-    // 21cm * 29.7cm are default for A4
-    max-height: 29.7cm;//900px;
-    height: 100rem;
-    max-width: 21cm;//800px; //880
+    max-height: 29.7cm;
+    max-width: 21cm;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+// Hide the embedded CV on mobile devices
+@media (max-width: 768px) {
+    .cv-div {
+        display: none;
+    }
+}
+
+// Professional looking buttons for download & fullscreen links
+.cv-link {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #4CAF50; // green color for a professional look
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #45a049; // slightly darker green for hover
+    }
 }
