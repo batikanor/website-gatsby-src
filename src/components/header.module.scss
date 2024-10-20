@@ -1,125 +1,169 @@
-@import '../styles/index.scss';
+$breakpoint-smartphones-landscape: 768px;
 
-$nav-background: $background-purple;
-$nav-text-color: #fff;
-$nav-hover-color: $background-green;
-$nav-active-color: $background-green;
+@keyframes titleGrow {
+  from {font-size: 4.4rem;}
+  to {font-size: 4.45rem;}
+}
+
+@keyframes titleGrow2 {
+    from {font-size: 2.9rem;}
+    to {font-size: 3rem;}
+}
+
+@keyframes navItemSelect {
+    from {font-size: 1.7rem;}
+    to {font-size: 1.8rem;}
+  }
+
+@keyframes navItemSelect2 {
+    from {font-size: 1rem;}
+    to {font-size: 1.15rem;}
+}
 
 .header {
-    padding: 1rem 2rem;
-    background-color: $nav-background; /* Use the purple from your gradient */
+    //outline-color: black;
+    //outline-style: solid;
+    //outline-width: 2px;
+    //outline-offset: -7px;
+    padding: 1rem 2rem 3rem;
     text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 150px 0px 0px 150px; /* Matches your container style with a bigger left curve */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    //background-color: lightGray;
+    //filter: sepia(100%);
+    font-family: cursive, fantasy;
+    margin-bottom: 1rem;
+    display: block;
+
+
 }
 
 .title {
-    color: $nav-text-color;
-    font-size: 3rem;
+    color: black;
+    font-size: 4.5rem;
     text-decoration: none;
+    text-align: center;
     animation-name: titleGrow;
     animation-duration: 0.3s;
+    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 .subtitle {
-    color: lighten($nav-text-color, 20%);
-    font-size: 1.2rem;
-    font-family: 'Verdana', sans-serif;
-    margin-top: -0.5rem;
-}
-
-.navDiv {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navList {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navItem {
-    color: $nav-text-color;
+    color: #555444;
     font-size: 1.5rem;
-    margin: 0 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.nav-divider {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    align-self: flex-start;
+}
+.nav-divider:after {
+    content: "";
+}
+.nav-div {
+
+}
+.nav {
+    display: flexbox;
+
+
+}
+
+.nav-list {
+
+    display: flex;
+    //display: flex; //< ltr
+    list-style: none;
+    margin: 0;
+
+ 
+}
+
+.nav-item {
+    float: left;
+    color: #444444;
+    font-size: 1.7rem;
+    margin-right: 2rem;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    font-weight: bold;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, cursive, 'bigfish';
+    font-weight: bolder;
+
 }
 
-.navItem:hover {
-    color: $nav-hover-color; /* Change to your green gradient color */
+.nav-item:hover {
+    color: #111111;
+    font-size: 1.9rem;
     animation-name: navItemSelect;
-    animation-duration: 0.1s;
+    animation-duration: 0.05s;
 }
 
-.activeNavItem {
-    color: $nav-active-color; /* Active state color */
-    font-weight: bold;
+.active-nav-item {
+    
+    color:rgb(35, 10, 105);
+    
 }
 
-/* Hamburger Menu Icon */
-.hamburger {
-    display: none;
-    font-size: 2rem;
-    color: $nav-text-color;
-    cursor: pointer;
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1824px) {
+    .container {
+        width: 78%;
+    }
+    .nav-list {
+        justify-content: space-between;
+        margin: 0 0 0 0;
+        display: inline;
+    }
+    .nav-item {
+        float: left;
+        font-size: 1.3rem;
+        text-decoration: none;
+        text-align: center;
+
+    }
+    .nav-item:hover {
+        color: #111111;
+        font-size: 1.5rem;
+        animation-name: navItemSelect2;
+
+    }
+
 }
 
-/* Open/Close Menu for mobile */
-.navOpen {
-    display: block;
-}
 
-@media (max-width: $breakpoint-tablet) {
+/* iPads (portrait) and Below----------- */
+@media only screen and (max-width : 1024px) {
     .title {
-        font-size: 2rem;
+        font-size: 3rem;
+        animation-name: titleGrow2;
+    
+    }
+    .subtitle {
+        font-size: 1.5rem;
     }
 
-    .nav {
-        display: none;
-        flex-direction: column;
-        background-color: $nav-background;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 0;
-        z-index: 1;
-        border-radius: 0 0 150px 150px; /* Rounded at the bottom for mobile */
+    .nav-list {
+        justify-content: space-between;
+        margin: 0 0 0 0;
+        display: inline;
     }
-
-    .navList {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navItem {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
-
-@media (max-width: $breakpoint-smartphones-landscape) {
-    .navItem {
+    .nav-item {
+        float: left;
         font-size: 1rem;
-        animation-name: navItemSelectMobile;
+        text-decoration: none;
+        text-align: center;
+
+    }
+    .nav-item:hover {
+        color: #111111;
+        font-size: 1.3rem;
+        animation-name: navItemSelect2;
+
     }
 }
+
+

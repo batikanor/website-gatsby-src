@@ -19,7 +19,3 @@ Domain & Aliases: batikanor.com / linkx.tk / ubistandard.ml
 * batikanor.com/t/turkalman --> Visits the telegram group/channel/profile with public id of 'turkalman'
 * batikanor.com/l/xxx --> I use these links to shorten urls, e.g. If I were to send you a google sheet document for something, I may shorten it this way beforehand.
 
-
-# for local building
-docker build -t gatsby-app .
-docker run -p 8000:8000 gatsby-app
