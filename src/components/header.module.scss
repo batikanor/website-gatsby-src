@@ -1,30 +1,24 @@
-$breakpoint-tablet: 1024px;
-$breakpoint-smartphones-landscape: 768px;
+@import '../styles/index.scss';
 
-@keyframes navItemSelect {
-    from {font-size: 1.7rem;}
-    to {font-size: 1.8rem;}
-}
-
-@keyframes navItemSelectMobile {
-    from {font-size: 1rem;}
-    to {font-size: 1.1rem;}
-}
+$nav-background: $background-purple;
+$nav-text-color: #fff;
+$nav-hover-color: $background-green;
+$nav-active-color: $background-green;
 
 .header {
     padding: 1rem 2rem;
-    background-color: #333;
+    background-color: $nav-background; /* Use the purple from your gradient */
     text-align: center;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 50px 0px 0px 50px; /* Much more rounded on the left */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keeps the shadow */
+    border-radius: 150px 0px 0px 150px; /* Matches your container style with a bigger left curve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .title {
-    color: #fff;
+    color: $nav-text-color;
     font-size: 3rem;
     text-decoration: none;
     animation-name: titleGrow;
@@ -32,7 +26,7 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .subtitle {
-    color: #ccc;
+    color: lighten($nav-text-color, 20%);
     font-size: 1.2rem;
     font-family: 'Verdana', sans-serif;
     margin-top: -0.5rem;
@@ -58,7 +52,7 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .navItem {
-    color: #fff;
+    color: $nav-text-color;
     font-size: 1.5rem;
     margin: 0 1rem;
     text-decoration: none;
@@ -67,13 +61,13 @@ $breakpoint-smartphones-landscape: 768px;
 }
 
 .navItem:hover {
-    color: #f1c40f; /* Professional hover effect */
+    color: $nav-hover-color; /* Change to your green gradient color */
     animation-name: navItemSelect;
     animation-duration: 0.1s;
 }
 
 .activeNavItem {
-    color: #f1c40f;
+    color: $nav-active-color; /* Active state color */
     font-weight: bold;
 }
 
@@ -81,7 +75,7 @@ $breakpoint-smartphones-landscape: 768px;
 .hamburger {
     display: none;
     font-size: 2rem;
-    color: white;
+    color: $nav-text-color;
     cursor: pointer;
 }
 
@@ -98,14 +92,14 @@ $breakpoint-smartphones-landscape: 768px;
     .nav {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: $nav-background;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 1rem 0;
         z-index: 1;
-        border-radius: 0 0 10px 10px; /* Rounds bottom corners in mobile */
+        border-radius: 0 0 150px 150px; /* Rounded at the bottom for mobile */
     }
 
     .navList {
