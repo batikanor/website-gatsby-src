@@ -1,169 +1,128 @@
+$breakpoint-tablet: 1024px;
 $breakpoint-smartphones-landscape: 768px;
-
-@keyframes titleGrow {
-  from {font-size: 4.4rem;}
-  to {font-size: 4.45rem;}
-}
-
-@keyframes titleGrow2 {
-    from {font-size: 2.9rem;}
-    to {font-size: 3rem;}
-}
 
 @keyframes navItemSelect {
     from {font-size: 1.7rem;}
     to {font-size: 1.8rem;}
-  }
+}
 
-@keyframes navItemSelect2 {
+@keyframes navItemSelectMobile {
     from {font-size: 1rem;}
-    to {font-size: 1.15rem;}
+    to {font-size: 1.1rem;}
 }
 
 .header {
-    //outline-color: black;
-    //outline-style: solid;
-    //outline-width: 2px;
-    //outline-offset: -7px;
-    padding: 1rem 2rem 3rem;
+    padding: 1rem 2rem;
+    background-color: #333; /* Dark background for a professional look */
     text-align: center;
-    //background-color: lightGray;
-    //filter: sepia(100%);
-    font-family: cursive, fantasy;
-    margin-bottom: 1rem;
-    display: block;
-
-
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title {
-    color: black;
-    font-size: 4.5rem;
+    color: #fff;
+    font-size: 3rem;
     text-decoration: none;
-    text-align: center;
     animation-name: titleGrow;
     animation-duration: 0.3s;
-    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 .subtitle {
-    color: #555444;
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
+    color: #ccc;
+    font-size: 1.2rem;
+    font-family: 'Verdana', sans-serif;
+    margin-top: -0.5rem;
 }
 
-.nav-divider {
-    margin-top: 3rem;
-    margin-bottom: 0;
-    align-self: flex-start;
-}
-.nav-divider:after {
-    content: "";
-}
-.nav-div {
-
-}
-.nav {
-    display: flexbox;
-
-
-}
-
-.nav-list {
-
+.navDiv {
     display: flex;
-    //display: flex; //< ltr
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navList {
     list-style: none;
+    display: flex;
     margin: 0;
-
- 
+    padding: 0;
 }
 
-.nav-item {
-    float: left;
-    color: #444444;
-    font-size: 1.7rem;
-    margin-right: 2rem;
+.navItem {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 1rem;
     text-decoration: none;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif, cursive, 'bigfish';
-    font-weight: bolder;
-
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
 }
 
-.nav-item:hover {
-    color: #111111;
-    font-size: 1.9rem;
+.navItem:hover {
+    color: #f1c40f; /* Professional hover effect */
     animation-name: navItemSelect;
-    animation-duration: 0.05s;
+    animation-duration: 0.1s;
 }
 
-.active-nav-item {
-    
-    color:rgb(35, 10, 105);
-    
+.activeNavItem {
+    color: #f1c40f;
+    font-weight: bold;
 }
 
-
-
-/* Desktops and laptops ----------- */
-@media only screen and (max-width : 1824px) {
-    .container {
-        width: 78%;
-    }
-    .nav-list {
-        justify-content: space-between;
-        margin: 0 0 0 0;
-        display: inline;
-    }
-    .nav-item {
-        float: left;
-        font-size: 1.3rem;
-        text-decoration: none;
-        text-align: center;
-
-    }
-    .nav-item:hover {
-        color: #111111;
-        font-size: 1.5rem;
-        animation-name: navItemSelect2;
-
-    }
-
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
 }
 
+/* Open/Close Menu for mobile */
+.navOpen {
+    display: block;
+}
 
-/* iPads (portrait) and Below----------- */
-@media only screen and (max-width : 1024px) {
+@media (max-width: $breakpoint-tablet) {
     .title {
-        font-size: 3rem;
-        animation-name: titleGrow2;
-    
-    }
-    .subtitle {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
-    .nav-list {
-        justify-content: space-between;
-        margin: 0 0 0 0;
-        display: inline;
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 1;
     }
-    .nav-item {
-        float: left;
-        font-size: 1rem;
-        text-decoration: none;
-        text-align: center;
 
+    .navList {
+        flex-direction: column;
+        align-items: center;
     }
-    .nav-item:hover {
-        color: #111111;
-        font-size: 1.3rem;
-        animation-name: navItemSelect2;
 
+    .navItem {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
 
-
+@media (max-width: $breakpoint-smartphones-landscape) {
+    .navItem {
+        font-size: 1rem;
+        animation-name: navItemSelectMobile;
+    }
+}
