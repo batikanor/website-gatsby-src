@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import { FaBars, FaTimes } from 'react-icons/fa' // FontAwesome icons for the hamburger menu
+import { FaBars, FaTimes } from 'react-icons/fa'
 import headerStyles from './header.module.scss'
 
 const Header = () => {
@@ -12,13 +12,13 @@ const Header = () => {
                 author
             }
         }
-    } 
+    }
     `)
 
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+        setMenuOpen(prev => !prev)
     }
 
     return (
@@ -35,11 +35,11 @@ const Header = () => {
                     <ul className={headerStyles.navList}>
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link></li>
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link></li>
-                        {/* <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li> */}
+                        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></li>
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/cv">CV</Link></li>
                         <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link></li>
-                        {/* <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">Projects</Link></li> */}
-                        {/* <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/demo">Demo</Link></li> */}
+                        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">Projects</Link></li>
+                        <li><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/demo">Demo</Link></li>
                     </ul>
                 </nav>
                 <div className={headerStyles.hamburger} onClick={toggleMenu}>
@@ -49,4 +49,5 @@ const Header = () => {
         </header>
     )
 }
+
 export default Header

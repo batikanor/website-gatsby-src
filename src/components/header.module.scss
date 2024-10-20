@@ -13,14 +13,14 @@ $breakpoint-smartphones-landscape: 768px;
 
 .header {
     padding: 1rem 2rem;
-    background-color: #333; /* Dark background for a professional look */
+    background-color: #333;
     text-align: center;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px; /* Rounds the corners of the navbar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    border-radius: 50px 0px 0px 50px; /* Much more rounded on the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keeps the shadow */
 }
 
 .title {
